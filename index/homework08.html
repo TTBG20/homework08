@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        body{
+            width: 1920px;
+        }
+        .body1{
+            font-family:  Georgia, serif;
+            background-image: url(16.jpg);
+            background-size: 25%;
+        }
+        .tab1{
+            width: 801px;
+            border-top: orange solid 1px;
+            border-bottom: orange solid 1px;
+            margin:0 auto;
+
+        }
+        .menu{
+            height: 50px;
+            border-right: orange solid 1px;
+        }
+        .menu li{
+            float: left;
+            width: 199px;
+            text-align: center;
+            line-height: 28px;
+            height: 50px;
+            cursor: pointer;
+            border-left: orange solid 1px;
+            font: bold 40px 'STXingkai';
+            font-size: 30px;
+            overflow: hidden;
+            background-color: #e8e15e8c;
+        }
+        .menu li.off{
+            background: #FFFFFF;
+            color: orange;
+            font-weight: bold;
+        }
+        .menudiv{
+            height: 200px;
+            border-left: orange solid 1px;
+            border-right: orange solid 1px;
+            border-top: 0;
+            background-color: #3b3b868c;
+        }
+        .menudiv div{
+            font: bolder 15px 'STXingkai';
+            color: orange;
+            padding: 15px;
+            line-height: 50px;
+        }
+        .border{
+        	background-image:url('16.jpg');
+            background-size: 25%;
+            margin: 0 auto;
+        }
+        .header{
+        	background-color:#5295a799; 
+        }
+        .nice{
+        	font-size: 40px;
+        	color: #c6f964f5;
+        	font-family: Georgia, serif;
+            text-decoration: absolute;
+        }
+		h2{
+    		display: inline-block;
+    		margin: 0 auto;
+    		position: relative;
+		}
+		h2 p {
+     		font-size: 35px;
+     		color: #03073abf;
+     		font-family: 'STXingkai';
+		}
+        .as{
+            float: left;
+            width: 420px;
+            height:450px;
+            padding: 100px 100px;
+            background-image: url(18.jpg);
+            background-size: 54%;
+        }
+        a{
+            font-size: 60px;
+            text-decoration: none;
+            font-family: STXingkai;
+            color: #e63bb9;
+        }
+        .song{
+            font-family: Georgia, serif;
+            font-size: 70px;
+            color: orange;
+        }
+        #main{
+            width: 1750px;
+            height: 550px;
+            margin: 100px auto;
+            margin-left: 620px;
+            position: relative;
+            margin-top: 0px;
+        }
+        #main .scollimg{
+            width: 700px;
+            height: 400px;
+            position: relative;
+        }
+        #main .scollimg img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #main .item{
+            position: absolute;
+            bottom: 20px;
+            width: 200px;
+            height: 5px;
+        }
+        #main .item span{
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            border-radius: 50%;
+        }
+        #main .item span:hover{
+            cursor: pointer;
+        }
+        .footer{
+            margin: 0 auto;
+        }
+        .foot{
+            height: 150px;
+            margin-top: 10px;
+            background: #000;
+            color:orange;
+            text-align: center;
+            font-size: 35px;
+            font-family: STXingkai;
+        }
+        .big3{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="body1">
+    <div class="tab1" id="tab1">
+        <div class="menu">
+            <ul>
+                <li id="one1" onclick="setTab('one',1)">Before</li>
+                <li id="one2" onclick="setTab('one',2)">Now</li>
+                <li id="one3" onclick="setTab('one',3)">Background</li>
+                <li id="one4" onclick="setTab('one',4)">Experience</li>
+            </ul>
+        </div>
+        <div class="menudiv">
+            <div id="con_one_1">2015年，艾兰·沃克推出《Spectre》和《Force》两首作品；同年，他离开NCS，与索尼音乐旗下的MER Musikk签约 ；12月4日，通过索尼音乐发行第一首正式单曲《Faded》，该首歌曲以《Fade》为基础，加入了挪威女歌手艾斯琳·索尔海姆的演唱部分，该首歌曲的MV在YouTube上的点击量突破了10亿，并取得了超过400万的全球实体销量，还成为欧洲十个国家单曲榜冠军，荷兰DJ提雅斯多对该首歌进行了重混。</div>
+            <div id="con_one_2" style="display:none;">2017    第25届最佳挪威艺人; 2016-08-04    戛纳狮子奖Faded;2017-01-05    第12届年度西洋歌手;2019    年度最佳海外艺人</div>
+            <div id="con_one_3" style="display:none;">艾兰·沃克是个拥有无限潜能和未来有实力的电音音乐人。他的表演气氛十分火爆，总能让现场人声沸腾。此外，艾兰·沃克特有的LOGO让他的电音变得不简单。而生活中的艾兰·沃克则是一个爱电影、爱编程、爱游戏的一个阳光男孩。没有任何音乐基础的艾兰·沃克，仅靠在网上观看视频教程，就在14岁时完成了三四十首歌曲的制作。而一首《Faded》更是让他成为电音届名副其实的“人气新秀”。</div>
+            <div id="con_one_4" style="display:none;">2019年3月21日，发布《和平精英》盛夏推广曲《On My Way》；6月21日，发行由Pedro Capo、Farruko演唱的单曲《Calma 》；7月25日，发行与A$AP Rocky的合作单曲《Live Fast》。12月，获得2019TMEA腾讯音乐娱乐盛典年度最佳海外艺人的荣誉。2020年3月6日，联手挪威电音制作人K-391，及改变自的原曲制作人Ahrix，推出新单曲《End of Time》</div>
+        </div>
+    </div>
+    </div>
+    <div style="text-align:center;clear:both;"></div>
+	<div class="border clear">
+		<div class="header clear">
+			<div class="nice">
+				<h2 id="alan">
+        			Alan Olav Walker
+        		<p id="person">Electronic Music Wit</p>
+                <p id="person">Best Norwegian Artist</p>
+    			</h2>
+    		</div>
+		</div>
+        <div class="list">
+            <ul class="as">
+                <ol class="song"><p>Album:</p></ol>
+                <ol><a href="https://baike.baidu.com/item/Faded/19199426">Faded</a></ol>
+                <ol><a href="https://baike.baidu.com/item/Fade/19315432">Fade</a></ol>
+                <ol><a href="https://baike.baidu.com/item/Sing%20Me%20To%20Sleep/19718680">Sing Me To Sleep</a></ol>
+                <ol><a href="https://baike.baidu.com/item/ALONE/20252658">ALONE</a></ol>
+                <ol><a href="https://baike.baidu.com/item/The%20Spectre/22125764">The Spectre</a></ol>
+            </ul>
+        </div>
+        <div id="main"> 
+            <div class="scollimg">
+                <div class="imgs">
+                    <img src="2.jpg" height="650" width="1300" />
+                    <img src="3.jpg" height="650" width="1300"/>
+                    <img src="4.jpg" height="650" width="1300"/>
+                    <img src="9.jpg" height="650" width="1300"/>
+                    <img src="6.jpg" height="650" width="1300"/>
+                    <img src="7.jpg" height="650" width="1300"/>
+                    <img src="8.jpg" height="650" width="1300"/>
+                    <img src="15.jpg" height="650" width="1300"/>
+                </div>
+            </div>
+            <div class="item">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+         <div class="footer clear">
+            <div class="big3 clear">
+                <div class="foot">
+                    <p>2020.12.12</p>
+                    <p>From yulin</p>
+                    <p>Welcome</p>
+                </div>
+            </div>
+        </div>
+	</div>
+</body>
+    <script type="text/javascript">
+        //选项卡
+        var name = 'one';
+        var cursel = 1;
+        var time1 = 2000;
+        var linkslen,iIntervalId;
+        window.onload = function(){
+            autoMove('img','span');//轮播图参数
+            var links = document.getElementById("tab1").getElementsByTagName('li');
+            linkslen = links.length;
+            for(var i = 1; i<linkslen; i++){
+                links[i].onmouseover = function(){
+                    clearInterval(iIntervalId);
+                    this.onmouseout = function(){
+                        iIntervalId = setInterval(time, time1);
+                    }
+                }
+            }
+            document.getElementById("con_" + name + "_" + linkslen).parentNode.onmouseover = function(){
+                clearInterval(iIntervalId);
+                this.onmouseout = function(){
+                   var iIntervalId = setInterval(time, time1);
+                }
+            }
+            setTab(name,cursel);
+           var iIntervalId = setInterval(time, time1);
+        }
+        //循环显示
+        function setTab(name,cursel){
+            for(var i = 1; i<linkslen; i++){
+                var menu = document.getElementById(name + i);
+                var menudiv = document.getElementById("con_" + name + "_"+ i);
+                if(i == cursel-1){
+                    menu.className = "off";
+                    menudiv.style.display = "block";
+                }else{
+                    menu.className = "";
+                    menudiv.style.display = "none";
+                }
+            }
+        }
+        function time(){
+            cursel++;
+            if(cursel>linkslen)
+                cursel = 0;
+            setTab(name,cursel);
+        }
+        // 折叠
+        var alan = document.getElementById("alan");
+        var person = document.getElementById("person");
+        alan.onclick=function(){
+            if(person.style.display=="none"){
+                person.style.display="block";
+            }else{
+                person.style.display="none";
+            }
+        }
+        //轮播图函数
+        function autoMove(tagImg,tagSpan){
+            var imgs=document.getElementsByTagName(tagImg);
+            var spans=document.getElementsByTagName(tagSpan);
+            //每次轮播后样式
+            function InitMove(index){
+                for(var i=0;i<imgs.length;i++){
+                    imgs[i].style.opacity='0';
+                    spans[i].style.background='rgb(230,216,118,1';
+                }
+                imgs[index].style.opacity='1';
+                spans[index].style.background='white';
+            }
+            //第一次初始化
+            InitMove(0);
+            var count=1;
+            function fMove(){
+                if(count==imgs.length){
+                    count=0;
+                }
+                InitMove(count);
+                count++;
+            }
+            //设置自动轮播定时器；
+            var scollMove=setInterval(fMove,1500);
+        }
+    </script>
+</html>
